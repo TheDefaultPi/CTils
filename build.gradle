@@ -16,9 +16,10 @@ dependencies {
     // Fabric API and Minecraft
     minecraft "com.mojang:minecraft:1.21.4"
     mappings "net.fabricmc:yarn:1.21.4+build.1:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.15.6"
+    modImplementation "net.fabricmc:fabric-loader:0.16.14"
     modImplementation "net.fabricmc.fabric-api:fabric-api:0.93.1+1.21.4"
     
+    // Include any other dependencies here
 }
 
 processResources {
@@ -44,8 +45,9 @@ jar {
     }
 }
 
+// Configure the maven publication
 publishing {
-    publications {the mod A 
+    publications {
         mavenJava(MavenPublication) {
             artifact(remapJar) {
                 builtBy remapJar
