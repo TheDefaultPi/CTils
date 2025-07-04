@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "ctils",
+  "version": "${version}",
+  "name": "CTils",
+  "description": "A lightweight dungeon utility mod for tracking stats on Minehut Purpur RPG servers",
+  "authors": [
+    "YourName"
+  ],
+  "contact": {
+    "homepage": "https://github.com/TheDefaultPi/ctils",
+    "sources": "https://github.com/TheDefaultPi/ctils"
+  },
+  "license": "MIT",
+  "icon": "assets/ctils/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.ctils.mod.CTilsClient"
+    ]
+  },
+  "mixins": [
+    "ctils.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
